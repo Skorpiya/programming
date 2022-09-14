@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    font-family: Roboto, sans-serif;
+}
+
+.row {
+    display: flex;
+}
+
+.block1 p {
+    color: #ffab5f;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 7px;
+}
+.block1 .month {
+    background-color: #ffab5f;
+    border-radius: 18px;
+}
+.block1 {
+    width: 45%;
+    margin-left: 15px;
+}
+
+.block2 p {
+    color: #019cfe;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 7px;
+}
+.block2 .month {
+    background-color: #019cfe;
+    border-radius: 18px;
+}
+.block2 {
+    width: 45%;
+    margin-left: 25px;
+}
+
+.block3 p {
+    color: #fd684a;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 7px;
+}
+.block3 .month {
+    background-color: #fd684a;
+    border-radius: 18px;
+}
+.block3 {
+    width: 45%;
+    margin-left: 15px;
+}
+
+.block4 p {
+    color: #68d094;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 7px;
+}
+.block4 .month {
+    background-color: #68d094;
+    border-radius: 18px;
+}
+.block4 {
+    width: 45%;
+    margin-left: 25px;
+}
+
+p {
+    font-weight: 900;
+    font-size: x-large;
+}
+
+li {
+    color: #fff;
+}
+
+.month {
+    padding: 5px;
+}
+
+.month li {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
