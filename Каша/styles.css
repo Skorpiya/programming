@@ -20,8 +20,8 @@
     border: double 5px black;
     position: absolute;
     /* width: 50%; */
-    padding-left: 15px;
-    font-size: 10px;
+    padding: 15px;
+    font-size: 16px;
 }
 /* */
 .p2 p {
