@@ -1,0 +1,38 @@
+
+.thumbnail {
+  /* width: 300px; */
+  /* display: flex; */
+  height: fit-content;
+  /* object-fit: cover; */
+  margin-right: 5px;
+  vertical-align: middle;
+  object-fit: fill;
+  display: inline-block;
+  margin-left: 10px;
+}
+.search-box {
+  font-size: 20px;
+  /* margin-top: 10px; */
+  margin-left: 10px;
+  margin-right: 5px;
+  height: 20px;
+  /* width: 200px; */
+  padding: 10px;
+  vertical-align: middle;
+}
+.test {
+  /* margin-top: -80px; */
+  /* margin-left: 55%; */
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  object-fit: cover;
+  object-position: -15px 0px;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.proba {
+  display: block;
+  /* vertical-align: middle; */
+}
