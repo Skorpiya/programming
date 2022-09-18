@@ -1,0 +1,42 @@
+.vid-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 15px;
+  row-gap: 40px;
+}
+
+
+.thumbnail-r {
+  margin-bottom: 10px;
+}
+.thumbnail {
+  width: 100%;
+}
+.under-info-grid {
+  display: grid;
+  grid-template-columns: 42px 1fr;
+}
+.icon-m {
+  padding-right: 10px;
+}
+.icon {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.vid-name {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  margin-top: 2px;
+  margin-bottom: 7px;
+}
+.vid-creator {
+  font-size: 10px;
+  color: rgb(96, 96, 96);
+  margin-bottom: 3px;
+}
+.vid-info {
+  font-size: 10px;
+  color: rgb(96, 96, 96);
+}
