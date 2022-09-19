@@ -2,7 +2,16 @@
   position: fixed;
   left: 0;
   bottom: 0;
-  top: 50px;
+  top: 57px;
   width: 72px;
   background-color: white;
+}
+
+.sb-link {
+  
+  height: 76px;
+}
+
+.sb-link:hover {
+  background-color: lightgray;
 }

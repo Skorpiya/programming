@@ -74,6 +74,32 @@
   margin-right: 8px;
 }
 
+
+
+.search-button .tooltip, .voice-button .tooltip
+, .not-button .tooltip, .up-button .tooltip {
+  position: absolute;
+  top: 60px;
+  background-color: rgb(77, 77, 77);
+  color: white;
+  padding: 8px 5px;
+  opacity: 0%;
+  font-size: 12px;
+  font-family: Roboto, sans-serif;
+  transition: 0.15s;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.voice-button:hover, .search-button:hover {
+  background-color: #c8c8c8;
+}
+
+.search-button:hover .tooltip, .voice-button:hover .tooltip
+, .not-button:hover .tooltip, .up-button:hover .tooltip {
+  opacity: 90%;
+}
+
 .search-icon {
   height: 24px;
   width: 24px;
@@ -108,13 +134,16 @@
 
 .upload-icon {
   height: 24px;
-  padding: 8px;
-  margin-right: 8px;
+  padding: 16px;
+  /* margin-right: 8px; */
 }
 
-.not-button {
+.search-button, .voice-button
+, .not-button, .up-button {
   position: relative;
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .number-of-notifications {
