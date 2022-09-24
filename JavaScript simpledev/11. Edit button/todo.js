@@ -8,9 +8,10 @@ if (Array.isArray(savedTodos)) {
   todos = savedTodos;
 } else {
   todos = [{
-    title: 'Task',
-    dueDate: '23.09.2022',
-    id: 'id1'
+    title: 'Empty task',
+    dueDate: 'Empty date',
+    id: 'id1',
+    isEditing: false
   }];
 }
 
@@ -21,7 +22,8 @@ function createTodo(title, dueDate) {
   todos.push({
     title: title,
     dueDate: dueDate,
-    id: id
+    id: id,
+    isEditing: false
   });
 
   saveTodos();
@@ -35,6 +37,34 @@ function removeTodo(idToDelete) {
       return true;
     }
   } );
+
+  saveTodos();
+}
+
+// Switches Edit mode
+
+function switchEdit(idOfTodo) {
+  todos.forEach( function(todo){
+    if (todo.id === idOfTodo && todo.isEditing === false) {
+      todo.prtitle = todo.title;
+      todo.prdueDate = todo.dueDate;
+      todo.isEditing = true;
+    } else if (todo.id === idOfTodo && todo.isEditing === true) {
+      todo.isEditing = false;
+    }
+  });
+
+  saveTodos();
+}
+
+// Changes the content of todo
+function changeTodo(idOfTodo, title, dueDate) {
+  todos.forEach( function(todo){
+    if (todo.id === idOfTodo) {
+      todo.title = title;
+      todo.dueDate = dueDate;
+    } 
+  });
 
   saveTodos();
 }
@@ -60,21 +90,64 @@ function deleteTodo(event) {
   add();
 }
 
+function editTodo(event) {
+  const editButton = event.target;
+  switchEdit(editButton.id);
+  add();
+}
+
+function updateTodo(event) {
+  const editButton = event.target;
+  const textbox = document.getElementById('edit-text');
+  const datePicker = document.getElementById('edit-date');
+  changeTodo(editButton.id, textbox.value, datePicker.value);
+  switchEdit(editButton.id);
+  add();
+}
 // View
 add();
 
 function add() {
   document.getElementById('todo-list').innerHTML = '';
   todos.forEach(function (todo) {
-      const divbox = document.getElementById('todo-list');
       const element = document.createElement('div');
-      element.innerText = todo.title + ' ' +todo.dueDate;
-      const deleteButton = document.createElement('button');
-      deleteButton.innerText = '-';
-      deleteButton.style = 'margin-left: 12px';
-      deleteButton.onclick = deleteTodo;
-      deleteButton.id = todo.id;
-      element.appendChild(deleteButton);
+      if (todo.isEditing === false) {
+        element.innerText = todo.title + ' ' +todo.dueDate;
+
+        const editButton = document.createElement('button');
+        editButton.innerText = 'Edit';
+        editButton.style = 'margin-left: 12px';
+        editButton.onclick = editTodo;
+        editButton.id = todo.id;
+        element.appendChild(editButton);
+
+        const deleteButton = document.createElement('button');
+        deleteButton.innerText = '-';
+        deleteButton.style = 'margin-left: 12px';
+        deleteButton.onclick = deleteTodo;
+        deleteButton.id = todo.id;
+        element.appendChild(deleteButton);
+      } else {
+        const editText = document.createElement('input');
+        editText.type = 'text';
+        editText.value = todo.prtitle;
+        editText.id = 'edit-text';
+        element.appendChild(editText);
+
+        const editDate = document.createElement('input');
+        editDate.type = 'date';
+        editDate.value = todo.prdueDate;
+        editDate.id = 'edit-date';
+        element.appendChild(editDate);
+
+        const updateButton = document.createElement('button');
+        updateButton.innerText = 'Update';
+        updateButton.style = 'margin-left: 12px';
+        updateButton.onclick = updateTodo;
+        updateButton.id = todo.id;
+        element.appendChild(updateButton);
+      }
+      const divbox = document.getElementById('todo-list');
       divbox.appendChild(element);
     }
   )
