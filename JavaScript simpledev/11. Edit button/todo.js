@@ -81,6 +81,8 @@ function addTodo() {
   const textbox = document.getElementById('todo-title');
   const datePicker = document.getElementById('date-picker');
   createTodo(textbox.value, datePicker.value);
+  textbox.value = '';
+  datePicker.value = '';
   add();
 }
 
