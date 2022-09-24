@@ -128,6 +128,7 @@ function add() {
         deleteButton.style = 'margin-left: 12px';
         deleteButton.onclick = deleteTodo;
         deleteButton.id = todo.id;
+        deleteButton.className = 'delete-button';
         element.appendChild(deleteButton);
       } else {
         const editText = document.createElement('input');
