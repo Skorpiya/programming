@@ -5,6 +5,8 @@ input {
   user-select: text; /* Standard syntax */
 }
 
+button { -webkit-appearance: none; -moz-appearance: none; appearance: none; }
+
 .delete-button {
   height: 20px;
   width: 20px;
