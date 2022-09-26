@@ -12,7 +12,6 @@ button, input, div {
   border: none;
   border-radius: 28px;
   padding: 5px 10px;
-  -webkit-appearance: none;
 }
 
 button, input {
