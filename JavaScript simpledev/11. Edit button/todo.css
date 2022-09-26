@@ -1,11 +1,4 @@
-input {
-  -webkit-user-select: text; /* Chrome, Opera, Safari */
-  -moz-user-select: text; /* Firefox 2+ */
-  -ms-user-select: text; /* IE 10+ */
-  user-select: text; /* Standard syntax */
-}
 
-button { -webkit-appearance: none; -moz-appearance: none; appearance: none; }
 
 .delete-button {
   height: 20px;
@@ -15,6 +8,10 @@ button { -webkit-appearance: none; -moz-appearance: none; appearance: none; }
   color: white;
   border: 1px solid rgba(0, 0, 0, 0);
   transition: 0.15s;
+   -webkit-appearance: none;
+   -moz-appearance: none;
+   appearance: none;
+   -webkit-text-size-adjust: none;
 }
 
 .delete-button:hover {
