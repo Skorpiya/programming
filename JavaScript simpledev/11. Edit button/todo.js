@@ -115,7 +115,9 @@ function add() {
       const element = document.createElement('div');
       element.className = 'element';
       if (todo.isEditing === false) {
-        element.innerText = todo.title + ' ' +todo.dueDate;
+        const textBox = document.createElement('div');
+        textBox.innerText = todo.title + ' ' +todo.dueDate;
+        element.appendChild(textBox);
 
         const editButton = document.createElement('button');
         editButton.innerText = 'Edit';
@@ -125,11 +127,13 @@ function add() {
         element.appendChild(editButton);
 
         const deleteButton = document.createElement('button');
-        deleteButton.innerText = 'X';
+        deleteButton.innerHTML = '&#10006';
         deleteButton.onclick = deleteTodo;
         deleteButton.id = todo.id;
         deleteButton.className = 'delete-button';
-        element.appendChild(deleteButton);
+        const deleteBox = document.createElement('div');
+        deleteBox.appendChild(deleteButton);
+        element.appendChild(deleteBox);
       } else {
         const editText = document.createElement('input');
         editText.type = 'text';
@@ -137,13 +141,13 @@ function add() {
         editText.id = 'edit-text';
         element.appendChild(editText);
 
-        const deleteBox = document.createElement('div');
+        
         const editDate = document.createElement('input');
         editDate.type = 'date';
         editDate.value = todo.prdueDate;
         editDate.id = 'edit-date';
-        deleteBox.appendChild(editDate);
-        element.appendChild(deleteBox);
+        
+        element.appendChild(editDate);
 
         const updateButton = document.createElement('button');
         updateButton.innerText = 'Update';
