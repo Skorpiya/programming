@@ -16,6 +16,7 @@ button {
 
 .delete-button {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   margin-left: 12px;
