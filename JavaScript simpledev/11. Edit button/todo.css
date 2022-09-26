@@ -1,10 +1,13 @@
 button {
-  -webkit-appearance:none;
+  -webkit-appearance: none;
   background-color: none;
 }
 
 
 .delete-button {
+  position: relative;
+  justify-content: center;
+  align-items: center;
   margin-left: 12px;
   min-width: 0;
   height: 20px;
