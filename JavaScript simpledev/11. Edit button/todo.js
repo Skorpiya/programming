@@ -128,7 +128,7 @@ function add() {
         element.appendChild(editButton);
 
         const deleteButton = document.createElement('button');
-        deleteButton.innerHTML = '&#10006';
+        deleteButton.innerHTML = '<span style="color:blue">&#10006;</span>';
         deleteButton.onclick = deleteTodo;
         deleteButton.id = todo.id;
         deleteButton.className = 'delete-button';
