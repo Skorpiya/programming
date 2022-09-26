@@ -113,6 +113,7 @@ function add() {
   document.getElementById('todo-list').innerHTML = '';
   todos.forEach(function (todo) {
       const element = document.createElement('div');
+      element.className = 'element';
       if (todo.isEditing === false) {
         element.innerText = todo.title + ' ' +todo.dueDate;
 
@@ -136,11 +137,13 @@ function add() {
         editText.id = 'edit-text';
         element.appendChild(editText);
 
+        const deleteBox = document.createElement('div');
         const editDate = document.createElement('input');
         editDate.type = 'date';
         editDate.value = todo.prdueDate;
         editDate.id = 'edit-date';
-        element.appendChild(editDate);
+        deleteBox.appendChild(editDate);
+        element.appendChild(deleteBox);
 
         const updateButton = document.createElement('button');
         updateButton.innerText = 'Update';

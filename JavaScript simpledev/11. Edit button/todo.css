@@ -1,8 +1,8 @@
-button {
-  -webkit-appearance: none;
-  background-color: none;
+/* button {
+  /* -webkit-appearance: none; */
+  /* background-color: none; */
   
-  -webkit-margin-before: none;
+  /* -webkit-margin-before: none;
   -webkit-margin-end: none;
   -webkit-margin-after: none;
   -webkit-margin-start: none;
@@ -10,8 +10,8 @@ button {
   -webkit-padding-before: none;
   -webkit-padding-end: none;
   -webkit-padding-after: none;
-  -webkit-padding-start: none;
-}
+  -webkit-padding-start: none; */
+/* } */ 
 
 
 .delete-button {
@@ -21,14 +21,16 @@ button {
   align-items: center;
   margin-left: 12px;
   min-width: 0;
-  height: 20px;
-  width: 20px;
+  padding: 1px 6px;
+  height: 25px;
+  width: 25px;
   background-color: rgb(199, 22, 40);
   border-radius: 25%;
   color: white;
   border: 1px solid rgba(0, 0, 0, 0);
   transition: 0.15s;
-  text-align: center;
+  /* text-align: center; */
+  /* vertical-align: middle; */
 }
 
 .delete-button:hover {
@@ -36,3 +38,7 @@ button {
   cursor: pointer;
 }
 
+.element {
+  display: flex;
+  /* align-items: ; */
+}
