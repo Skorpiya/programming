@@ -5,6 +5,7 @@ button {
 
 
 .delete-button {
+  margin-left: 12px;
   min-width: 0;
   height: 20px;
   width: 20px;
