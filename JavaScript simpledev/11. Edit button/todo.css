@@ -1,6 +1,16 @@
 button {
   -webkit-appearance: none;
   background-color: none;
+  
+  -webkit-margin-before: none;
+  -webkit-margin-end: none;
+  -webkit-margin-after: none;
+  -webkit-margin-start: none;
+
+  -webkit-padding-before: none;
+  -webkit-padding-end: none;
+  -webkit-padding-after: none;
+  -webkit-padding-start: none;
 }
 
 
