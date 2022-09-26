@@ -113,6 +113,7 @@ function add() {
   document.getElementById('todo-list').innerHTML = '';
   todos.forEach(function (todo) {
       const element = document.createElement('div');
+      // element.className = 'line';
       element.className = 'element';
       if (todo.isEditing === false) {
         const textBox = document.createElement('div');
@@ -120,7 +121,7 @@ function add() {
         element.appendChild(textBox);
 
         const editButton = document.createElement('button');
-        editButton.innerText = 'Edit';
+        editButton.innerText = 'Изменить';
         editButton.style = 'margin-left: 12px';
         editButton.onclick = editTodo;
         editButton.id = todo.id;
@@ -143,6 +144,7 @@ function add() {
 
         
         const editDate = document.createElement('input');
+        editDate.style = 'margin-left: 12px';
         editDate.type = 'date';
         editDate.value = todo.prdueDate;
         editDate.id = 'edit-date';
@@ -150,7 +152,7 @@ function add() {
         element.appendChild(editDate);
 
         const updateButton = document.createElement('button');
-        updateButton.innerText = 'Update';
+        updateButton.innerText = 'Обновить';
         updateButton.style = 'margin-left: 12px';
         updateButton.onclick = updateTodo;
         updateButton.id = todo.id;

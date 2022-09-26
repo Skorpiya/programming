@@ -5,10 +5,12 @@
   <link rel="stylesheet" href="todo.css">
 </head>
 <body>
+  <div class="line">
+    <input id="todo-title" type="text">
+    <input id="date-picker" type="date"/>
+    <button onclick="addTodo()">Добавить задачу</button>
+  </div>
   
-  <input id="todo-title" type="text">
-  <input id="date-picker" type="date"/>
-  <button onclick="addTodo()">Add Todo</button>
   
   <div id="todo-list"></div>
   <script src="todo.js"></script>
