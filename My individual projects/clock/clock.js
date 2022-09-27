@@ -2,11 +2,11 @@
 setInterval(() => {
   const time = document.getElementById('time');
   const dateObject = new Date();
-  const hours = format(dateObject.getHours()) + dateObject.getHours();
+  const hours = dateObject.getHours();
   const minutes = format(dateObject.getMinutes()) + dateObject.getMinutes();
   const seconds = format(dateObject.getSeconds()) + dateObject.getSeconds();
   time.innerText = hours + ":" + minutes + ":" + seconds;
-  time.innerText = dateObject.toLocaleTimeString(); // аналог
+  // time.innerText = dateObject.toLocaleTimeString(); // аналог
 }, 10);
 
 function format (number) {
