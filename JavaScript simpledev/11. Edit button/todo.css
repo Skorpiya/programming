@@ -38,7 +38,7 @@ button, input {
   width: 20px;
   background-color: rgb(199, 22, 40);
   border-radius: 25%;
-  color: rgb(191, 117, 117);
+  color: rgb(255, 255, 255);
   border: 1px solid rgba(0, 0, 0, 0);
   transition: 0.15s;
 }
