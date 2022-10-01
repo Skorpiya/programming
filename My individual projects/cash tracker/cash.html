@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="cash.css">
+  <title>Cash</title>
+</head>
+<body>
+  <menu>
+    <h1>Expense Tracker</h1>
+    <div class="input-box">
+      <select class="type">
+        <option value="choose">Выберите</option>
+        <option value="expenses">Расходы</option>
+        <option value="income">Доходы</option>
+      </select>
+      <input class="description" type="text">
+      <input class="date" type="date">
+      <input class="amount" type="number">
+      <button class="add">Добавить</button>
+    </div>
+  </menu>
+  <table class="cash-table">
+    <thead>
+      <tr>
+        <td>Тип</td>
+        <td>Описание</td>
+        <td>Дата</td>
+        <td>Сумма</td>
+        <td></td>
+      </tr>
+    </thead>
+    <tbody class="tbody">
+      
+    </tbody>
+  </table>
+  <script src="cash.js"></script>
+</body>
+</html>

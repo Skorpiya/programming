@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.cash-table {
+  min-width: 400px;
+  border-collapse: collapse;
+  margin: auto;
+  /* align-items: center; */
+  /* background-color: rgb(250, 56, 56); */
+  border: none;
+  border-radius: 3px 3px 0 0;
+  overflow: hidden;
+  color: white;
+  font-family: Roboto, sans-serif;
+  font-size: 0.9em;
+}
+
+thead {
+  /* background-color: rgb(63, 63, 63); */
+  background-color: rgb(63, 63, 63);
+  /* border-bottom: 1px solid rgb(75, 75, 75); */
+}
+
+thead td:nth-child(-1n + 4) {
+  border-top: none;
+  border-right: 1px solid rgb(75, 75, 75);
+}
+
+thead td:nth-child(n) {
+  border-bottom: 1px solid rgb(203, 21, 21);
+}
+
+tbody {
+  background-color: rgb(27, 27, 27);
+}
+
+tbody tr {
+  border-bottom: 1px solid rgb(75, 75, 75);
+}
+
+tbody tr:last-child {
+  border-bottom: none;
+}
+
+td {
+  width: 140px;
+  padding: 8px 10px;
+}
+
+td:nth-last-of-type(1) {
+  width: 80px;
+  text-align: center;
+}
+
+
+td:last-of-type button {
+  display: inline;
+  padding: 0;
+  cursor: pointer;
+  background-color: transparent;
+  color: white;
+  border: 1px solid transparent;
+}
+

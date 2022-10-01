@@ -1,0 +1,56 @@
+body{
+width: 260px;
+font-size:16px;
+background-color:#9ad717;
+font-family: 'Lobster', cursive;
+}
+
+h1{
+    font-family: "Arial", sans-serif;
+    font-size: 20px;
+}
+li{
+    list-style:square;
+}
+p{
+   font-family:Sans-Serif;
+    font-size: 10px;
+    color: red;
+}
+.blok1{
+
+    width: 200px;
+    background: red;
+    padding: 5px;
+    padding-right: 20px;
+    border: solid 1px black;
+    float: left;
+}
+.blok2{
+
+    width: 200px;
+    background: #fc0;
+    padding: 5px;
+    border: solid 1px black;
+    float: left;
+    position: relative;
+    top: 300px;
+    left: -65px;
+    }
+.blok{
+    width: 200px;
+    background: red;
+    padding: 5px;
+    padding-right: 20px;
+    border: solid 1px black;
+    float: left;
+
+}
+.container{
+      box-sizing: border-box;
+      vertical-align: top;
+      width: 1000px;
+      margin: 0 5px;
+      text-align: center;
+
+}
