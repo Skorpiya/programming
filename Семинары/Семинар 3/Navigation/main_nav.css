@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+
+body {
+  margin-bottom: 1500px;
+}
+
+aside {
+  position: fixed;
+  background-color: rgb(29, 31, 95);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 20%;
+  /* margin-right: 20%; */
+}
+
+aside .links {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  margin-left: 15px;
+  margin-top: 15px;
+}
+
+aside .hse_icon img {
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+aside .text_link {
+  margin-top: 7px;
+  text-decoration: none;
+  color: white;
+  font-family: Roboto, sans-serif;
+}
+
+/* .hse_icon img {
+
+} */
+
+main {
+  background-color: white;
+  margin-left: 20%;
+}

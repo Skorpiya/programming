@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+.info-table {
+  border-collapse: collapse;
+  font-size: 13px;
+  font-weight: 500;
+  font-family: Roboto, sans-serif;
+  margin: auto;
+}
+
+.info-table thead th {
+  background: linear-gradient(rgb(52, 216, 46), rgb(32, 175, 37)) ;
+  padding: 15px;
+  border: 2px solid white;
+  color: white;
+  border-top-right-radius: 7px;
+  border-top-left-radius: 7px;
+}
+.info-table thead th:empty {
+  background: transparent;
+  border: none;
+}
+
+.info-table tbody td {
+  background-color: rgb(187, 229, 186);
+  padding: 15px 7px;
+  border: 2px solid white;
+  text-align: center;
+  width: 100px;
+}
+
+.info-table tbody td:nth-child(1) {
+  color: white;
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+  background: linear-gradient(to right top, rgb(139, 226, 72), rgb(13, 176, 56)) ;
+}
+
+.image-content td:nth-child(n + 2){
+  background-image: url(images/checkmark-png-5.png);
+  background-size: 25px 25px;
+  background-repeat: no-repeat;
+  background-position: center;
+} 
+
+
+/* .image-check {
+  background-image: url(images/checkmark-png-5.png);
+  background-size: 25px 25px;
+  background-repeat: no-repeat;
+  background-position: center;
+} */
+
+.info-table tfoot td {
+ color: rgb(34, 186, 29);
+ font-size: 23px;
+ text-align: center;
+ text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.45);
+ padding: 8px 0;
+}
+
+.info-table tfoot td:nth-child(1) {
+  text-align: center;
+  color: black;
+  font-size: 14px;
+  text-shadow: none;
+}
+
+/* .info-table tfoot  */
