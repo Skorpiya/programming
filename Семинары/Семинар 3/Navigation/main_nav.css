@@ -30,6 +30,7 @@ aside .hse_icon img {
 }
 
 aside .text_link {
+  word-spacing: 5px;
   margin-top: 7px;
   text-decoration: none;
   color: white;
