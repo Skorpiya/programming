@@ -1,0 +1,129 @@
+@import "https://fonts.googleapis.com/css2?family=Roboto&display=swap";
+body {
+  background: #666;
+  font-family: Roboto, sans-serif;
+}
+
+.container {
+  width: 800px;
+  margin: 0 auto;
+  padding-top: 5rem;
+}
+
+.card {
+  background: #fff;
+  border-radius: 6px;
+  padding: 1rem;
+  box-shadow: 2px 3px 10px #0003;
+}
+
+.btn {
+  color: #42b983;
+  text-transform: uppercase;
+  cursor: pointer;
+  background: #fff;
+  border: 1px solid #42b983;
+  border-radius: 99px;
+  outline: none;
+  margin-right: 1rem;
+  padding: .5rem 1.5rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all .22s;
+  position: relative;
+}
+
+.btn.primary {
+  color: #fff;
+  background: #42b983;
+}
+
+.btn:active {
+  box-shadow: inset 1px 1px 1px #0000004d;
+}
+
+.btn:hover {
+  cursor: pointer;
+  opacity: .8;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.preview {
+  flex-wrap: wrap;
+  padding: .5rem;
+  display: flex;
+}
+
+.preview-image {
+  align-self: flex-start;
+  margin-bottom: .5rem;
+  margin-right: .5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.preview-image.removing {
+  transition: all .3s;
+  transform: scale(0);
+}
+
+.preview-image:hover .preview-remove {
+  opacity: 1;
+}
+
+.preview-image:hover .preview-info {
+  bottom: 0;
+}
+
+.preview-image img {
+  width: 180px;
+  height: auto;
+  display: block;
+}
+
+.preview-remove {
+  opacity: 0;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  background: #ffffff80;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  transition: opacity .22s;
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.preview-info {
+  height: 24px;
+  background: #ffffff80;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5px;
+  font-size: .8rem;
+  transition: bottom .22s;
+  display: flex;
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+  right: 0;
+}
+
+.preview-info-progress {
+  text-align: center;
+  width: 30%;
+  background: #42b983;
+  transition: width .22s;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+}
+
+/*# sourceMappingURL=index.e1d8d849.css.map */
