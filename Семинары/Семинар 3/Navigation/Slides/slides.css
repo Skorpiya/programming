@@ -1,0 +1,14 @@
+.samples {
+  display: flex;
+  /* grid-template-columns: repeat(2, 1fr); */
+  /* gap: 10px; */
+  /* flex-direction: column; */
+}
+
+.samples a img {
+  /* display: block; */
+  /* min-width: 10px; */
+  min-width: 100%;
+  max-width: 100%;
+  flex: 1;
+}

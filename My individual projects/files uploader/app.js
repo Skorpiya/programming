@@ -1,10 +1,11 @@
-import firebase from 'firebase'
-import 'firebase/storage'
+// import firebase from 'firebase'
+// import 'firebase/storage'
 
 import {upload} from './upload.js'
 
 // Import the functions you need from the SDKs you need
-import { initializeApp } from "firebase/app";
+import { initializeApp } from "https://www.gstatic.com/firebasejs/9.12.1/firebase-app.js";
+import { getStorage, ref, uploadBytesResumable, getDownloadURL } from "https://www.gstatic.com/firebasejs/9.12.1/firebase-storage.js";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -19,14 +20,33 @@ const firebaseConfig = {
 };
 
 // Initialize Firebase
-const app = initializeApp(firebaseConfig);
+const firebase = initializeApp(firebaseConfig);
 
-const storage = firebase.storage()
+const storage = getStorage();
+const storageRef = ref(storage);
 
 upload('#file', {
   multi: true,
   accept: ['.png', '.jpg', 'jpeg', '.gif'],
-  onUpload(files) {
-    console.log('Files: ', files)
+  onUpload(files, blocks) {
+    files.forEach((file, index) => {
+      const myref = ref(storage, `images/${file.name}`)
+      const task = uploadBytesResumable(myref, file);
+
+      task.on('state_changed', snapshot => {
+        const percentage = ((snapshot.bytesTransferred / snapshot.totalBytes) * 100).toFixed(0) + '%'
+        const block = blocks[index].querySelector('.preview-info-progress')
+        block.textContent = percentage
+        block.style.width = percentage
+      }, 
+      error => { 
+        console.log(error)
+      }, 
+      () => {
+        getDownloadURL(task.snapshot.ref).then((downloadURL) => {
+          console.log('File ' + file.name + ' is available at', downloadURL);
+        });
+      });
+    })
   }
 })

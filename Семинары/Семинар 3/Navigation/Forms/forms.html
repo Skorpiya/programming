@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="../main_nav.css">
+  <link rel="stylesheet" href="forms.css">
+  <script src="https://kit.fontawesome.com/c439da589e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <aside>
+    <div class="links">
+      <div class="hse_icon">
+        <a href="https://www.hse.ru/" target="_blank"><img src="../icons/hselogo_fullsize_inverted.svg" alt=""></a>
+      </div>
+      <a class="text_link" href="../main_nav.html"> <i class="fa-solid fa-house"></i>Главная</a>
+      <a class="text_link" href="../Table/table.html"><i class="fa-solid fa-table"></i>Таблица</a>
+      <a class="text_link active" href="forms.html"><i class="fa-solid fa-heart"></i>Форма</a>
+    </div>
+  </aside>
+  <main>
+    <form action="http://185.182.111.214:7628/cgi-bin/form_action.py" method='get' target='_self'>
+      <fieldset class="contact-info">
+        <legend>
+          Контанктная информация
+        </legend>
+        <p>
+          <label>
+            Имя
+          </label>
+          <input name="name" value="Иван" type="text">
+        </p>
+        <p>
+          <label>
+            Телефон
+          </label>
+          <input name="phone number" value="8-800-555-35-35" type="tel">
+        </p>
+        <p>
+          <label>
+            Email
+          </label>
+          <input name="email" value="example@yandex.ru" type="email">
+        </p>
+        <p>
+          <label>
+            Дата посещения
+          </label>
+          <input name="date of the last visit" type="date">
+        </p>
+      </fieldset>
+      
+      <fieldset class="personal-info">
+        <legend>
+          Персональная информация
+        </legend>
+        <p>
+          <label>
+            Возраст
+          </label>
+          <input  name="age" type="number" value="0" size="99">
+        </p>
+        <p>
+          <label>
+            Предпочитаемая кухня
+          </label>
+          <select name="kitchen">
+            <option>Русская</option>
+            <option>Итальянская</option>
+            <option>Грузинская</option>
+          </select>
+        </p>
+        <p>
+          <label>
+            Какие блюда Вы бы хотели бы увидеть в меню?
+          </label>
+          <textarea  name="dishes" cols="30" rows="5" width="200px"></textarea>
+        </p>
+      </fieldset>
+      
+      <fieldset>
+        <legend>
+          Оценка нашего заведения
+        </legend>
+        <p>Почему Вы выбрали наше заведение? <br>
+          <input name="choice" type="radio" value="nearby">Недалеко от дома/работы <br>
+          <input name="choice" type="radio" value="advertisement">Увидел рекламу <br>
+          <input name="choice" type="radio" value="recommendation">Посоветовали <br>
+          <input name="choice" type="radio" value="price and quality">Оптимальное соотношение цены и качества <br>
+        </p>
+        <p>Вы будете рекомендовать наше заведение своим знакомым? <br>
+          <input name="yes_no" type="radio" value="yes">Да <br>
+          <input name="yes_no" type="radio" value="no">Нет <br>
+        </p>
+      </fieldset>
+      <input class="send" type="submit" value="Отправить">
+    </form>
+  </main>
+</body>
+</html>

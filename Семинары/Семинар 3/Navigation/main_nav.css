@@ -30,16 +30,25 @@ aside .hse_icon img {
 }
 
 aside .text_link {
-  word-spacing: 5px;
+  word-spacing: normal;
   margin-top: 7px;
-  text-decoration: none;
-  color: white;
+  text-decoration: underline transparent;
+  color: rgb(115, 128, 203);
   font-family: Roboto, sans-serif;
+  transition: text-decoration 0.25s;
 }
 
-/* .hse_icon img {
+aside .text_link i {
+  margin-right: 5px;
+}
 
-} */
+aside .active {
+  color: white;
+}
+
+aside .text_link:hover {
+  text-decoration: underline;
+}
 
 main {
   background-color: white;
