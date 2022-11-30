@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    li {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <form action="http://185.182.111.214:7628/cgi-bin/form_action.py" method='get' target='_self'>
+  <ol>
+    <li>Название книги
+      <select name="book">
+        <option name="book" value="war and piece">Война и мир</option>
+        <option name="book" value="anna karenina">Анна Каренина</option>
+        <option name="book" value="chuck and gek">Чук и Гек</option>
+      </select>
+    </li>
+    <li>Координаты клиента:
+      <p>Фамилия
+        <input name="surname" value="Петров" type="text">
+        Имя:
+        <input name="name" value="Петр" type="text">
+        Отчество:
+        <input name="otchestvo" value="Петрович" type="text">
+      </p>
+    </li>
+    <li>
+      Заказать:
+      <input name="order" value="5" type="number">
+      шт. по цене
+      <input name="price" value="500" type="number">
+      руб
+    </li>
+    <li>
+      Место проживания:
+      <input name="place of living" type="radio" value="Moscow">Москва
+      <input name="place of living" type="radio" value="Nizniy">Нижний
+      <input checked name="place of living" type="radio" value="Bor">Бор
+    </li>
+    <li>
+      Время получения заказа:
+      <input checked name="time" type="checkbox" value="10-12">10-12
+      <input name="time" type="checkbox" value="10-14">12-14
+      <input name="time" type="checkbox" value="14-16">14-16
+    </li>
+    <li>
+      Дополнительная информация:
+      <p><textarea placeholder="Для дополнительной информации" name="dop info" cols="30" rows="5" width="200px"></textarea></p>
+    </li>
+    <li>
+      Пароль: 
+      <input name="password" value="qwert" type="password">
+    </li>
+    <input name="Reset" type="Reset" value="Обновить">
+    <input name="submit" type="Submit" value="Отправить">
+  </ol>
+</form>
+
+<table>
+
+</table>
+
+<ul type="square">
+  <li>item</li>
+    <ol type="I">
+      <li value="1">subitem</li>
+      <li value="5">subitem</li>
+      <li>subitem</li>
+    </ol>
+  <li>item</li>
+  <li>item</li>
+</ul>
+
+
+<form action="http://185.182.111.214:7628/cgi-bin/form_action.py" method='get' target='_self'>
+  <p>
+    2. Координаты клиента:
+    <br>
+        Фамилия
+        <input name="surname" value="Петров" type="text">
+        Имя:
+        <input name="name" value="Петр" type="text">
+        Отчество:
+        <input name="otchestvo" value="Петрович" type="text">
+  </p>
+  <p>
+    5. Время получения заказа:
+      <input checked name="time" type="checkbox" value="10-12">10-12
+      <input name="time" type="checkbox" value="10-14">12-14
+      <input name="time" type="checkbox" value="14-16">14-16
+  </p>
+  <input name="Reset" type="Reset" value="Обновить">
+  <input name="submit" type="Submit" value="Отправить">
+</form>
+<table width='400'>
+  <tr>
+    <td>gdgh</td>
+    <td>gdgh</td>
+    <td>gdgh</td>
+  </tr>
+  <tr>
+    <td bgcolor="grey" align="left"><img width="200px" src="https://raw.githubusercontent.com/g00u00/g06u28/main/010_html/030_images/perl.gif"></td>
+    <td bgcolor="grey">5.</td>
+    <td bgcolor="grey" align="center">Ширина изображения - 200 пикселей</td>
+  </tr>
+  <tr>
+    <td colspan="3" bgcolor="grey" height="60px" align="center">7_1. Высота ячейки - 60 пикс</td>
+  </tr>
+</table>
+<table>
+  <form action="http://185.182.111.214:7628/cgi-bin/form_action.py" method='get' target='_self'>
+    <tr>
+      <td width="220px" height="220px" valign="center" align="center">
+        <img height="100px" src="https://raw.githubusercontent.com/g00u00/g06u28/main/010_html/030_images/perl.gif">
+        <br> Товар 1. Цена 500р.
+        <br> Заказать <input name="tovar 1" type="number" value="10" size="10px"> шт.
+      </td>
+      <td width="220px" height="220px" valign="center" align="center">
+        <img height="100px" src="https://raw.githubusercontent.com/g00u00/g06u28/main/010_html/030_images/perl.gif">
+        <br> Товар 2. Цена 501р.
+        <br> Заказать <input name="tovar 2" type="number" value="20" size="10px"> шт.
+      </td>
+      <td width="220px" height="220px" valign="bottom" align="left">
+        <input name="submit" type="Submit" value="Положить в корзину">
+      </td>
+    </tr>
+  </form>
+</table>
+<p>
+  4. Открыть графическую ссылку <a target="_blank" href="https://www.hse.ru/"><img height="35px" src="https://raw.githubusercontent.com/g00u00/g06u28/main/010_html/030_images/hse30.png"></a>высотой 35px на сайт Вышки в новом окне браузера
+</p>
+</body>
+</html>

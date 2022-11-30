@@ -1,0 +1,40 @@
+aside {
+  position: fixed;
+  background-color: #181818;
+  width: 13rem;
+  height: 100vh;
+}
+
+/* Верхние иконки */
+
+.main_info {
+  margin-top: 2vh;
+  text-align: center;
+}
+
+.main_info img {
+  height: 100px;
+  border-radius: 50%;
+}
+
+.name, .student {
+  color: antiquewhite;
+  margin-top: 5px;
+}
+
+.name {
+  font-size: 20px;
+}
+
+/*  Вкладки */
+
+.tabs {
+  margin-top: 45px;
+}
+
+
+/* Блок меню */
+
+.icons a {
+  color: blueviolet;
+}
