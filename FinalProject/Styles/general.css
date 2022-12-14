@@ -36,6 +36,7 @@ main {
   background-image: linear-gradient(0.5turn, #3f87a6, #ebf8e1, #f69d3c);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  margin-bottom: 20px;
  }
 
 .text {
