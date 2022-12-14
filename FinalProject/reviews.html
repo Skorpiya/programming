@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Styles/general.css">
+  <link rel="stylesheet" href="Styles/aside.css">
+  <link rel="stylesheet" href="Styles/reviews.css">
+  <script src="https://kit.fontawesome.com/c439da589e.js" crossorigin="anonymous"></script>
+  <title>Document</title>
+</head>
+<body>
+  <aside>
+    <div class="main_info">
+      <a href="main.html#start">
+        <img src="Images/5d40d1346d1438bab81027d5e8284a90.jpg">
+      </a>
+      <p class="name"> Анастасия</p>
+    </div>
+    <div class="tabs">
+      <a href="about_me.html">Обо мне</a>
+      <a href="skills.html">Навыки</a>
+      <a href="projects.html">Проекты</a>
+      <a style="color: cornflowerblue;" href="reviews.html">Обратная связь</a>
+    </div>
+    <div class="icons">
+      <a target="_blank" href="https://vk.com/ntitkova2003"><i class="fa-brands fa-vk"></i></a>
+      <a target="_blank" href="https://t.me/Anastasia_Titkova_0"><i class="fa-brands fa-telegram"></i></a>
+      <a target="_blank" href="https://github.com/Skorpiya"><i class="fa-brands fa-github"></i></a>
+      <a target="_blank" href="https://ru.pinterest.com/anadmiti0149/"><i class="fa-brands fa-pinterest"></i></i></a>
+      <a target="_blank" href="https://www.youtube.com/@midlergenerations1719"><i class="fa-brands fa-youtube"></i></a>
+      <a target="_blank" href="mailto:adtitkova@edu.hse.ru"><i class="fa-solid fa-envelope"></i></a>
+    </div>
+  </aside>
+  <main>
+    <div class="main_block">
+      <div class="title" style="margin-bottom: 40px;">Обратная связь</div>
+      <form action="http://185.182.111.214:7628/cgi-bin/form_action.py" method='get' target='_self'>
+        <div class="form_block">
+          <div class="text_form">Фамилия</div>
+          <input class="input_form" name="surname" type="text">
+        </div>
+        <div class="form_block">
+          <div class="text_form">Имя</div>
+          <input class="input_form" name="name" type="text">
+        </div>
+        <div class="form_block">
+          <div class="text_form">Контактные данные</div>
+          <input class="input_form" name="contact_info" type="text">
+        </div>
+        <div class="form_block">
+          <div class="text_form">Ваше мнение о сайте</div>
+          <textarea class="input_form" name="comment" cols="30" rows="5"></textarea>
+        </div>
+        <input class="submit" name="submit" type="Submit" value="Отправить">
+      </form>
+    </div>
+    
+  </main>
+</body>
+</html>

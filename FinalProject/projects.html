@@ -4,23 +4,25 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../Styles/general.css">
-  <link rel="stylesheet" href="../Styles/aside.css">
-  <link rel="stylesheet" href="../Styles/intro.css">
+  <link rel="stylesheet" href="Styles/general.css">
+  <link rel="stylesheet" href="Styles/aside.css">
+  <link rel="stylesheet" href="clock.css">
   <script src="https://kit.fontawesome.com/c439da589e.js" crossorigin="anonymous"></script>
   <title>Document</title>
 </head>
 <body>
   <aside>
     <div class="main_info">
-      <img src="../Images/5d40d1346d1438bab81027d5e8284a90.jpg">
+      <a href="main.html#start">
+        <img src="Images/5d40d1346d1438bab81027d5e8284a90.jpg">
+      </a>
       <p class="name"> Анастасия</p>
     </div>
     <div class="tabs">
-      <a href="">Обо мне</a>
-      <a href="">Навыки</a>
-      <a href="">Проекты</a>
-      <a href="">Связаться</a>
+      <a href="about_me.html">Обо мне</a>
+      <a href="skills.html">Навыки</a>
+      <a style="color: cornflowerblue;" href="projects.html">Проекты</a>
+      <a href="reviews.html">Обратная связь</a>
     </div>
     <div class="icons">
       <a target="_blank" href="https://vk.com/ntitkova2003"><i class="fa-brands fa-vk"></i></a>
@@ -31,12 +33,19 @@
       <a target="_blank" href="mailto:adtitkova@edu.hse.ru"><i class="fa-solid fa-envelope"></i></a>
     </div>
   </aside>
-  <main >
-    <div class="intro" >
-      <p class="hi">Привет 👋</p>
-      
-  
-      <button>Связаться</button>
+  <main>
+    <div class="main_block">
+      <div class="title">Проекты</div>
+      <div class="text">
+        Время - весьма ограниченный ресурс и, увлекаясь, я нередко об этом забываю)
+        Давай вместе насладимся моментом и тем временем, что у нас есть)
+      </div>
+      <div class="display">
+        <p class="local_time">Местное время</p>
+        <div id="time"></div>
+        <div id="date"></div>
+      </div>
+      <script src="clock.js"></script>
     </div>
   </main>
 </body>

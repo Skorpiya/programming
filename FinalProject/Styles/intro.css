@@ -1,13 +1,97 @@
  .intro {
   margin-left: 80px;
-  margin-bottom: 2000px;
-  padding-top: 230px;
+  /* margin-bottom: 1800px; */
+  padding-top: 130px;
   color: white;
   
   /* font-weight: bold; */
   /* line-height: 130px;  */
   /* letter-spacing: 5px; */
  } 
+
+ .hi, .navigation {
+  font-size: 70px;
+  background-image: linear-gradient(0.5turn, #3f87a6, #ebf8e1, #f69d3c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+ }
+
+ .intro .text {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-right: 50px;
+  line-height: 30px;
+ }
+
+ .videos {
+  /* display: flex; */
+  /* justify-content: space-between;
+  flex-wrap: nowrap; */
+  padding-right: 50px;
+ }
+
+ .videos iframe {
+  margin-bottom: 10px;
+ }
+
+ .videos :nth-child(even) {
+  margin-left: 50px;
+ }
+
+ .intro .button {
+  height: 50px;
+  width: 180px;
+  background-color: cornflowerblue;
+  border-radius: 12px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+
+ .intro .button_text {
+  color: azure;
+  font-size: 20px;
+  text-decoration: none;
+ }
+
+#navigation {
+  margin-top: 100px;
+}
+
+#navigation .nav_blocks {
+  list-style-type: none; 
+  font-size: 30px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  background-image: linear-gradient(0.5turn, cornflowerblue, #ebf8e1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+ }
+
+ small {
+  margin-bottom: 10px;
+ }
+
+ #navigation ol li {
+  margin-left: 20px;
+ }
+
+#bottom_of_the_site {
+  margin-top: 2500px;
+}
+
+.pointing_finger {
+  font-size: 50px;
+  color: cornflowerblue;
+}
+
+
+
+
+
+
+
 
 
 
