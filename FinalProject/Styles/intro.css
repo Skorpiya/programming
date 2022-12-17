@@ -1,12 +1,7 @@
  .intro {
   margin-left: 80px;
-  /* margin-bottom: 1800px; */
   padding-top: 130px;
   color: white;
-  
-  /* font-weight: bold; */
-  /* line-height: 130px;  */
-  /* letter-spacing: 5px; */
  } 
 
  .hi, .navigation {
@@ -23,19 +18,10 @@
   line-height: 30px;
  }
 
- /* .videos {
-  /* display: flex; */
-  /* justify-content: space-between;
-  flex-wrap: nowrap; 
-  padding-right: 50px;
- } */
-
  .videos iframe {
   margin-bottom: 10px;
   margin-right: 50px;
  }
-
-
 
  .intro .button {
   height: 50px;
@@ -68,13 +54,13 @@
   -webkit-text-fill-color: transparent;
  }
 
- small {
-  margin-bottom: 10px;
- }
+small {
+margin-bottom: 10px;
+}
 
- #navigation ol li {
-  margin-left: 20px;
- }
+#navigation ol li {
+margin-left: 20px;
+}
 
 #bottom_of_the_site {
   margin-top: 2500px;
