@@ -23,20 +23,19 @@
   line-height: 30px;
  }
 
- .videos {
+ /* .videos {
   /* display: flex; */
   /* justify-content: space-between;
-  flex-wrap: nowrap; */
+  flex-wrap: nowrap; 
   padding-right: 50px;
- }
+ } */
 
  .videos iframe {
   margin-bottom: 10px;
+  margin-right: 50px;
  }
 
- .videos :nth-child(even) {
-  margin-left: 50px;
- }
+
 
  .intro .button {
   height: 50px;
